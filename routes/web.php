@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PruebaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,5 @@ Route::get('/', function () {
 
 Route::group(['prefix'=> 'Vacalog'], function () {
     Route::resource('login', LoginController::class);
+    Route::resource('prueba', PruebaController::class);
 });

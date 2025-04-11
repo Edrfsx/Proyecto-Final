@@ -13,10 +13,12 @@ class LoginController extends Controller{
         return view("login");
     }
 
-    public function login(Request $request){
+    public function sesion(Request $request){
         $data = \App\Models\Login::select('usuario', 'contraseña','tipo')
         ->firstOrFail();
 
-        
+
+
     }
+
 }
